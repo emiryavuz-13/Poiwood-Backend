@@ -9,15 +9,15 @@ class ApiError extends Error {
     return new ApiError(400, message, errors);
   }
 
-  static unauthorized(message = 'Yetkisiz erişim') {
+  static unauthorized(message = "Yetkisiz erişim") {
     return new ApiError(401, message);
   }
 
-  static forbidden(message = 'Bu işlem için yetkiniz yok') {
+  static forbidden(message = "Bu işlem için yetkiniz yok") {
     return new ApiError(403, message);
   }
 
-  static notFound(message = 'Kayıt bulunamadı') {
+  static notFound(message = "Kayıt bulunamadı") {
     return new ApiError(404, message);
   }
 }
